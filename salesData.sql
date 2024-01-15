@@ -59,7 +59,7 @@ UPDATE sales SET month_name = MONTHNAME(date);
 SELECT DISTINCT city FROM sales;
 
 -- In which city is each branch?
-SELECT DISTINCT city,branch FROM sales;
+SELECT DISTINCT city, branch FROM sales;
 
 -- Product-related Questions
 -- How many unique product lines does the data have?
@@ -83,7 +83,7 @@ SELECT branch, city, SUM(total) AS total_revenue FROM sales GROUP BY city, branc
 -- Which product line had the largest VAT?
 SELECT product_line, AVG(tax_pct) as avg_tax FROM sales GROUP BY product_line ORDER BY avg_tax DESC;
 
--- Fetch each product line and add a column to those product line showing "Good", "Bad". Good if its greater than average sales
+-- Fetch each product line and add a column to those product lines showing "Good", or "Bad" (Good if it's greater than average sales)
 SELECT AVG(quantity) AS avg_qnty FROM sales;
 SELECT product_line,CASE
 		WHEN AVG(quantity) > 6 THEN "Good"
@@ -96,10 +96,10 @@ GROUP BY product_line;
 SELECT branch, SUM(quantity) AS qnty FROM sales GROUP BY branch
 HAVING SUM(quantity) > (SELECT AVG(quantity) FROM sales);
 
--- What is the most common product line by gender
+-- What is the most common product line by gender?
 SELECT gender, product_line, COUNT(gender) AS total_cnt FROM sales GROUP BY gender, product_line ORDER BY total_cnt DESC;
 
--- What is the average rating of each product line
+-- What is the average rating of each product line?
 SELECT ROUND(AVG(rating), 2) as avg_rating, product_line FROM sales GROUP BY product_line ORDER BY avg_rating DESC;
 
 --Customer-related Questions
