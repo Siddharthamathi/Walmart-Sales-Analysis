@@ -20,7 +20,7 @@ This analysis aims to uncover the different customer segments, purchase trends, 
 
 **1. Data Wrangling**: This is the first step where data inspection is done to ensure NULL values and missing values are detected and data replacement methods are used to replace missing or NULL values.
 
-      (I) Build a database.
+      (i) Build a database.
       
      (ii) Create a table and insert the data.
      
@@ -38,7 +38,7 @@ This analysis aims to uncover the different customer segments, purchase trends, 
 
 **Business Questions** 
 
-**General Question**
+**General Questions**
 
 1. How many unique cities does the data have?
 
@@ -54,13 +54,13 @@ This analysis aims to uncover the different customer segments, purchase trends, 
 
 4. What is the total revenue by month?
 
-5. What month had the largest COGS?
+5. Which month had the largest COGS?
 
-6. What product line had the largest revenue?
+6. Which product line had the largest revenue?
 
-7. What is the city with the largest revenue?
+7. Which is the city with the largest revenue?
 
-8. What product line had the largest VAT?
+8. Which product line had the largest VAT?
 
 9. Fetch each product line and add a column to those product lines showing "Good", and "Bad" (Good if it's greater than average sales).
 
@@ -70,17 +70,7 @@ This analysis aims to uncover the different customer segments, purchase trends, 
 
 12. What is the average rating of each product line?
 
-**Sales**
-
-1. Number of sales made at each time of the day per weekday
-
-2. Which of the customer types brings the most revenue?
-
-3. Which city has the largest tax percentage/ VAT (Value Added Tax)?
-
-4. Which customer type pays the most in VAT?
-
-**Customer**
+**Customer-related questions**
 
 1. How many unique customer types does the data have?
 
@@ -102,3 +92,12 @@ This analysis aims to uncover the different customer segments, purchase trends, 
 
 10. Which day of the week has the best average ratings per branch?
 
+**Sales-related Questions**
+
+1. Number of sales made at each time of the day per weekday
+
+2. Which of the customer types brings the most revenue?
+
+3. Which city has the largest tax percentage/ VAT (Value Added Tax)?
+
+4. Which customer type pays the most in VAT?
